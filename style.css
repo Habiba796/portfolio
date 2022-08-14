@@ -21,10 +21,14 @@
 
     }
 
+/*------header-------*/
     #hd {
         grid-area: hd;
         background: darkgrey;
-
+        display: flex;
+    }
+    .navbar__list {
+        display: flex;
     }
 
     #mn {
