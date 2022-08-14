@@ -1,15 +1,52 @@
 /*............small screens...........*/
-@media only screen and(min-width: 360px) and (max-width: 600px){
+@media only screen and (min-width: 360px) and (max-width: 600px){
     * {
         padding: 0px;
         margin: 0px;
         background: rgb(197, 16, 16);
+    } 
+    
+    #container {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 6fr 2fr 1fr;
+        grid-template-columns: 1fr;
+        grid-area: auto
+        "hd"
+        "mn"
+        "sd"
+        "ft"
+        ;
 
-    }  
+    }
+
+    #hd {
+        grid-area: hd;
+        background: darkgrey;
+
+    }
+
+    #mn {
+        grid-area: mn;
+        background: rgb(162, 53, 53);
+    }
+
+    #sd {
+        grid-area: sd;
+        background: rgb(243, 152, 152);
+    }
+
+    #ft {
+        grid-area: ft;
+        background: darkgrey;
+    }
+
+
 }
 
 /*............medium screens...........*/
-@media only screen and(min-width: 601px) and (max-width: 800px){
+@media only screen and (min-width: 601px) and (max-width: 800px){
     * {
         padding: 0px;
         margin: 0px;
@@ -17,14 +54,87 @@
 
     }  
 
+    #container {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 8fr 1fr;
+        grid-template-columns: 3fr 1fr;
+        grid-area: auto
+        "hd hd"
+        "mn sd"
+        "ft ft"
+        ;
+
+    }
+
+    #hd {
+        grid-area: hd;
+        background: darkgrey;
+
+    }
+
+    #mn {
+        grid-area: mn;
+        background: rgb(162, 53, 53);
+    }
+
+    #sd {
+        grid-area: sd;
+        background: rgb(243, 152, 152);
+    }
+
+    #ft {
+        grid-area: ft;
+        background: darkgrey;
+    }
+
+
 }
 
 /*............large screens...........*/
-@media only screen and(min-width: 801px) {
+@media only screen and (min-width: 801px) {
     * {
         padding: 0px;
         margin: 0px;
         background: rgb(29, 106, 20);
 
     }  
+
+    #container {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 8fr 1fr;
+        grid-template-columns: 5fr 2fr;
+        grid-area: auto
+        "hd hd"
+        "mn sd"
+        "ft ft"
+        ;
+
+    }
+
+    #hd {
+        grid-area: hd;
+        background: darkgrey;
+
+    }
+
+    #mn {
+        grid-area: mn;
+        background: rgb(162, 53, 53);
+    }
+
+    #sd {
+        grid-area: sd;
+        background: rgb(243, 152, 152);
+    }
+
+    #ft {
+        grid-area: ft;
+        background: darkgrey;
+    }
+
+
 }
